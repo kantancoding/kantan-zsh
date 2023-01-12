@@ -119,20 +119,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias vim="/opt/homebrew/bin/vim"
 alias ls="colorls --group-directories-first"
 alias lss="/bin/ls"
-# vi mode
-bindkey -v
-bindkey jj vi-cmd-mode
 # export KEYTIMEOUT=10
-
-# Use vim keys in tab complete menu:
-bindkey -M menuselect 'h' vi-backward-char
-bindkey -M menuselect 'k' vi-up-line-or-history
-bindkey -M menuselect 'l' vi-forward-char
-bindkey -M menuselect 'j' vi-down-line-or-history
-bindkey -v '^?' backward-delete-char
 
 # Change cursor shape for different vi modes.
 function zle-keymap-select {
@@ -177,8 +166,6 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=3"
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
-
-eval "$(direnv hook zsh)"
 
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
