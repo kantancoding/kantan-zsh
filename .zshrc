@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH="/usr/local/Cellar/llvm/10.0.1/bin/clangd:$PATH"
 export PATH="usr/local/opt/llvm/bin/clangd:$PATH"
-export PATH="/Users/georgio/go/bin:$PATH"
+export PATH="$HOME/go/bin:$PATH"
 export PATH="$PATH:/usr/local/sbin"
 export PATH="$PATH:/opt/homebrew/bin"
 export PATH="$PATH:/usr/local/go/bin"
@@ -15,7 +15,7 @@ export PATH
 export PATH=/usr/local/bin/vim:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/georgio/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set FZF Default to Ripgrep (must install ripgrep)
 export FZF_DEFAULT_COMMAND="rg --files --hidden --follow --no-ignore-vcs"
